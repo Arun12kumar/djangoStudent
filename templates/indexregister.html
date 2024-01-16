@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,400&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        body{
+            background-color: orange;
+        }
+
+        .container{
+            width: 550px;
+            height: 550px;
+            background: linear-gradient(rgb(237, 68, 68) 88%, rgb(95, 44, 44)12%);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            position: relative;
+            box-shadow: 1px 1px 10px black;
+            border-radius: 3px;
+            margin-top: 40px;
+            
+        }
+
+        .item label{
+            position: absolute;
+            left: 80px;
+            padding-left: 30px;
+            color: rgb(95, 44, 44);
+        }
+        .item input ,textarea{
+            margin-left: 190px;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+        }
+        button{
+            height: 30px;
+            background-color: rgb(237, 68, 68);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            transition: ease-out;
+            transition-delay: 50ms;
+            border-radius: 3px;
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Register Form </h1>
+        <div class="item"><label for="">First Name :</label><input type="text"></div>
+        <div class="item"><label for="">Last Name :</label><input type="text"></div>
+        <div class="item"><label for="">Father Name :</label><input type="text"></div>
+        <div class="item"><label for="">Mother Name :</label><input type="text"></div>
+        <div class="item"><label for="">student Age :</label><input type="text"></div>
+        <div class="item"><label for="">student Class  :</label><input type="text"></div>
+        <div class="item"><label for="">School Name :</label><input type="text"></div>
+        <div class="item"><label for="">Phone No :</label><input type="number"></div>
+        <div class="item"><label for="">Student Adress :</label><textarea name="" id="" cols="20" rows="3"></textarea></div>
+        <a href="/"><button>Register</button></a>
+    </div>
+
+
+</body>
+</html>
